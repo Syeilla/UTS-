@@ -27,7 +27,7 @@ int main (){
     cin >> Jamkeluar;
     cout << "\n";
 
-    int DurasiParkir = (Jamkeluar + 24 - Jammasuk) % 24;
+    int DurasiParkir = (Jamkeluar + 24 - Jammasuk);
     int totalPendapatanMotor = BiayaParkir("motor", DurasiParkir) * jumlahMotor;
     int totalPendapatanMobil = BiayaParkir("mobil", DurasiParkir) * jumlahMobil;
     int totalPendapatan = totalPendapatanMotor + totalPendapatanMobil;
